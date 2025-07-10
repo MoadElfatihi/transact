@@ -1,0 +1,22 @@
+services:
+
+  db:
+    image: postgres
+    restart: always
+    container_name: hexabank-postgres
+    environment:
+      POSTGRES_USER: hexabank_user
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: hexabank_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - hexabank_pgdata:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8081
+
+volumes:
+  hexabank_pgdata:

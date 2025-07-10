@@ -1,0 +1,5 @@
+id,firstName,lastName,email,dateNaissance,statut
+1,Durand,Alice,alice.durand@example.com,1985-07-15,ACTIF
+2,Martin,Jean,jean.martin@example.com,1990-03-22,ACTIF
+3,Dupont,Claire,claire.dupont@example.com,1978-11-02,INACTIF
+4,Nguyen,Minh,minh.nguyen@example.com,2000-01-10,ACTIF
